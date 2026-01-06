@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { User } from "@/entities/User";
+import { User } from "../../Entities/User";
 import { motion } from "framer-motion";
 
 const ThemeContext = createContext({

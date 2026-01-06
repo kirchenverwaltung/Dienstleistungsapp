@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Service } from "@/entities/Service";
-import { User } from "@/entities/User";
+import { Service } from "../Entities/Service";
+import { User } from "../Entities/User";
 import { Heart } from "lucide-react";
-import ServiceCard from "../components/shared/ServiceCard";
-import { Card, CardContent } from "@/components/ui/card";
+import ServiceCard from "../Components/shared/ServiceCard";
+import { Card, CardContent } from "../Components/ui/card";
 
 export default function FavoritesPage() {
   const [favorites, setFavorites] = useState([]);

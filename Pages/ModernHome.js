@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Job } from "@/entities/Job";
-import { User } from "@/entities/User";
-import { Application } from "@/entities/Application";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Job } from "../Entities/Job";
+import { User } from "../Entities/User";
+import { Application } from "../Entities/Application";
+import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
 import { motion, AnimatePresence } from "framer-motion";
-import ModernJobCard from "@/components/home/ModernJobCard";
-import CategoryCarousel from "@/components/home/CategoryCarousel";
+import ModernJobCard from "../Components/home/ModernJobCard";
+import CategoryCarousel from "../Components/home/CategoryCarousel";
 import { Search, MapIcon, Filter, Heart } from "lucide-react";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../Components/theme/ThemeProvider";
 import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 
 export default function ModernHomePage() {
   const navigate = useNavigate();

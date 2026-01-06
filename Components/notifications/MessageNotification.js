@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Message } from "@/entities/Message";
-import { User } from "@/entities/User";
+import { Message } from "../../Entities/Message";
+import { User } from "../../Entities/User";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../../utils";
 
 export default function MessageNotification() {
   const [notification, setNotification] = useState(null);

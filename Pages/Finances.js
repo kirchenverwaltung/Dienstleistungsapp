@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Transaction } from "@/entities/Transaction";
-import { User } from "@/entities/User";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Transaction } from "../Entities/Transaction";
+import { User } from "../Entities/User";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Badge } from "../Components/ui/badge";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../Components/ui/select";
 import { TrendingUp, TrendingDown, Calendar } from "lucide-react";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import { motion } from "framer-motion";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../Components/theme/ThemeProvider";
 
 export default function FinancesPage() {
   const { theme } = useTheme();

@@ -1,8 +1,8 @@
 import React from "react";
 import { useTheme } from "./ThemeProvider";
-import { Card, CardContent } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "../ui/card";
+import { Switch } from "../ui/switch";
+import { Label } from "../ui/label";
 import { Sun, Moon } from "lucide-react";
 
 export default function ThemeSwitch() {

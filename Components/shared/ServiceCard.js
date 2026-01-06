@@ -1,12 +1,12 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "../ui/card";
+import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
 import { Star, Clock, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../../utils";
 import { motion } from "framer-motion";
-import { User } from "@/entities/User";
+import { User } from "../../Entities/User";
 
 export default function ServiceCard({ service, onFavoriteToggle, isFavorite }) {
   const [isTogglingFavorite, setIsTogglingFavorite] = React.useState(false);

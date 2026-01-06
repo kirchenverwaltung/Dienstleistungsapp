@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Application } from "@/entities/Application";
-import { User } from "@/entities/User";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Application } from "../Entities/Application";
+import { User } from "../Entities/User";
+import { Card, CardContent } from "../Components/ui/card";
+import { Badge } from "../Components/ui/badge";
+import { Button } from "../Components/ui/button";
 import { FileText, Check, X, Mail, Phone } from "lucide-react";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 
 const statusColors = {
   ausstehend: "bg-amber-500/20 text-amber-400 border-amber-500/30",

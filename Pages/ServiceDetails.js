@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Service } from "@/entities/Service";
-import { Booking } from "@/entities/Booking";
-import { User } from "@/entities/User";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Badge } from "@/components/ui/badge";
+import { Service } from "../Entities/Service";
+import { Booking } from "../Entities/Booking";
+import { User } from "../Entities/User";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
+import { Textarea } from "../Components/ui/textarea";
+import { Label } from "../Components/ui/label";
+import { Badge } from "../Components/ui/badge";
 import { ArrowLeft, Star, Clock, MapPin, Heart, Calendar, CheckCircle } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 import { motion } from "framer-motion";
 
 export default function ServiceDetailsPage() {

@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { User } from "@/entities/User";
-import { Review } from "@/entities/Review";
-import { Application } from "@/entities/Application";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { User } from "../Entities/User";
+import { Review } from "../Entities/Review";
+import { Application } from "../Entities/Application";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Input } from "../Components/ui/input";
+import { Textarea } from "../Components/ui/textarea";
+import { Label } from "../Components/ui/label";
+import { Button } from "../Components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../Components/ui/select";
+import { Badge } from "../Components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../Components/ui/tabs";
 import { Phone, Building2, FileText, Star, Briefcase, Award, LogOut } from "lucide-react";
 import { motion } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "../api/base44Client";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
-import ThemeSwitch from "@/components/theme/ThemeSwitch";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import ThemeSwitch from "../Components/theme/ThemeSwitch";
+import { useTheme } from "../Components/theme/ThemeProvider";
 
 const skillOptions = [
   "Barkeeper", "Kellner/in", "Service", "Küchenhilfe", "Event-Helfer",

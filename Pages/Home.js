@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Job } from "@/entities/Job";
-import { User } from "@/entities/User";
-import { Application } from "@/entities/Application";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Job } from "../Entities/Job";
+import { User } from "../Entities/User";
+import { Application } from "../Entities/Application";
+import { Card, CardContent } from "../Components/ui/card";
+import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
+import { Badge } from "../Components/ui/badge";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../Components/ui/select";
 import { Link, useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 import { motion } from "framer-motion";
-import JobCard from "../components/jobs/JobCard";
-import JobMap from "../components/map/JobMap";
+import JobCard from "../Components/jobs/JobCard";
+import JobMap from "../Components/map/JobMap";
 import { ChevronUp, ChevronDown } from "lucide-react";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../Components/theme/ThemeProvider";
 
 const categories = ["Alle", "Gastronomie", "Event", "Büro", "Handwerk", "IT", "Verkauf", "Promotion", "Umzugshilfe", "Nachhilfe", "Sonstiges"];
 

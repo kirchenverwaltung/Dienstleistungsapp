@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send, Sparkles, MessageSquare } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { base44 } from "@/api/base44Client";
-import { useTheme } from "@/components/theme/ThemeProvider";
-import { Feedback } from "@/entities/Feedback";
-import { User } from "@/entities/User";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+import { base44 } from "../../api/base44Client";
+import { useTheme } from "../theme/ThemeProvider";
+import { Feedback } from "../../Entities/Feedback";
+import { User } from "../../Entities/User";
 
 export default function AIAssistant() {
   const [isOpen, setIsOpen] = useState(false);
