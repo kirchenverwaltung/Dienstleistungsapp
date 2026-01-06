@@ -1,0 +1,130 @@
+{
+  "name": "Job",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Jobtitel"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detaillierte Jobbeschreibung"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Gastronomie",
+        "Event",
+        "B\u00fcro",
+        "Handwerk",
+        "IT",
+        "Verkauf",
+        "Promotion",
+        "Umzugshilfe",
+        "Nachhilfe",
+        "Sonstiges"
+      ],
+      "description": "Job-Kategorie"
+    },
+    "company_name": {
+      "type": "string",
+      "description": "Name des Unternehmens/Arbeitgebers"
+    },
+    "location": {
+      "type": "string",
+      "description": "Arbeitsort"
+    },
+    "city": {
+      "type": "string",
+      "description": "Stadt"
+    },
+    "postal_code": {
+      "type": "string",
+      "description": "Postleitzahl"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Breitengrad"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "L\u00e4ngengrad"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Arbeitsdatum"
+    },
+    "start_time": {
+      "type": "string",
+      "description": "Startzeit"
+    },
+    "end_time": {
+      "type": "string",
+      "description": "Endzeit"
+    },
+    "payment_type": {
+      "type": "string",
+      "enum": [
+        "hourly",
+        "fixed"
+      ],
+      "default": "fixed",
+      "description": "Bezahlungsart: Stundenlohn oder Festbetrag"
+    },
+    "hourly_rate": {
+      "type": "number",
+      "description": "Stundenlohn in Euro (nur bei payment_type=hourly)"
+    },
+    "fixed_amount": {
+      "type": "number",
+      "description": "Fester Gesamtbetrag in Euro (nur bei payment_type=fixed)"
+    },
+    "total_positions": {
+      "type": "number",
+      "description": "Anzahl ben\u00f6tigter Personen",
+      "default": 1
+    },
+    "filled_positions": {
+      "type": "number",
+      "description": "Bereits besetzte Positionen",
+      "default": 0
+    },
+    "requirements": {
+      "type": "string",
+      "description": "Anforderungen an Bewerber"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "offen",
+        "in_bearbeitung",
+        "besetzt",
+        "abgeschlossen",
+        "storniert"
+      ],
+      "default": "offen"
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "Kontakt E-Mail"
+    },
+    "contact_phone": {
+      "type": "string",
+      "description": "Kontakt Telefon"
+    },
+    "is_urgent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Dringender Job"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "company_name",
+    "location",
+    "date",
+    "payment_type"
+  ]
+}

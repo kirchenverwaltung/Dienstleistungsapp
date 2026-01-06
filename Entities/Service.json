@@ -1,0 +1,71 @@
+{
+  "name": "Service",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name der Dienstleistung"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detaillierte Beschreibung"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Reinigung",
+        "Reparatur",
+        "Wellness",
+        "Handwerk",
+        "Garten",
+        "Transport",
+        "IT-Service",
+        "Beratung"
+      ],
+      "description": "Service-Kategorie"
+    },
+    "price": {
+      "type": "number",
+      "description": "Preis in Euro"
+    },
+    "duration": {
+      "type": "number",
+      "description": "Dauer in Minuten"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5,
+      "description": "Durchschnittliche Bewertung"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL zum Service-Bild"
+    },
+    "provider": {
+      "type": "string",
+      "description": "Anbieter des Services"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Wird auf Startseite hervorgehoben"
+    },
+    "availability": {
+      "type": "string",
+      "enum": [
+        "sofort",
+        "heute",
+        "diese_woche",
+        "auf_anfrage"
+      ],
+      "default": "auf_anfrage"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "price",
+    "provider"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "sender_email": {
+      "type": "string",
+      "description": "E-Mail des Absenders"
+    },
+    "sender_name": {
+      "type": "string",
+      "description": "Name des Absenders"
+    },
+    "receiver_email": {
+      "type": "string",
+      "description": "E-Mail des Empf\u00e4ngers"
+    },
+    "receiver_name": {
+      "type": "string",
+      "description": "Name des Empf\u00e4ngers"
+    },
+    "job_id": {
+      "type": "string",
+      "description": "ID des zugeh\u00f6rigen Jobs (optional)"
+    },
+    "message": {
+      "type": "string",
+      "description": "Nachrichteninhalt"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false,
+      "description": "Wurde gelesen"
+    }
+  },
+  "required": [
+    "sender_email",
+    "sender_name",
+    "receiver_email",
+    "receiver_name",
+    "message"
+  ]
+}

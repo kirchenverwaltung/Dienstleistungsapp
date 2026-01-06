@@ -1,0 +1,58 @@
+{
+  "name": "Transaction",
+  "type": "object",
+  "properties": {
+    "job_id": {
+      "type": "string",
+      "description": "ID des Jobs"
+    },
+    "job_title": {
+      "type": "string",
+      "description": "Titel des Jobs"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Betrag in Euro"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "einnahme",
+        "ausgabe"
+      ],
+      "description": "Transaktionstyp"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ausstehend",
+        "abgeschlossen",
+        "storniert"
+      ],
+      "default": "ausstehend"
+    },
+    "worker_email": {
+      "type": "string",
+      "description": "E-Mail des Jobsuchenden"
+    },
+    "employer_email": {
+      "type": "string",
+      "description": "E-Mail des Arbeitgebers"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Datum der Transaktion"
+    },
+    "hours_worked": {
+      "type": "number",
+      "description": "Gearbeitete Stunden"
+    }
+  },
+  "required": [
+    "job_id",
+    "job_title",
+    "amount",
+    "type"
+  ]
+}

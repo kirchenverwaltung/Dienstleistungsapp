@@ -1,0 +1,90 @@
+{
+  "name": "BusinessRegistration",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "E-Mail des Antragstellers"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Name des Antragstellers"
+    },
+    "has_business": {
+      "type": "boolean",
+      "description": "Hat bereits ein Gewerbe"
+    },
+    "business_proof_url": {
+      "type": "string",
+      "description": "URL zum Gewerbeschein-Foto"
+    },
+    "needs_help": {
+      "type": "boolean",
+      "description": "Braucht Hilfe bei Gewerbeanmeldung"
+    },
+    "form_data": {
+      "type": "object",
+      "description": "Ausgef\u00fcllte Formulardaten",
+      "properties": {
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "birth_date": {
+          "type": "string"
+        },
+        "birth_place": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "postal_code": {
+          "type": "string"
+        },
+        "business_description": {
+          "type": "string"
+        },
+        "start_date": {
+          "type": "string"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "eingereicht",
+        "wird_gepr\u00fcft",
+        "dokument_angefordert",
+        "an_beh\u00f6rde_gesendet",
+        "bei_beh\u00f6rde",
+        "genehmigt",
+        "abgelehnt"
+      ],
+      "default": "eingereicht",
+      "description": "Status der Anmeldung"
+    },
+    "admin_notes": {
+      "type": "string",
+      "description": "Notizen vom Admin"
+    },
+    "rejection_reason": {
+      "type": "string",
+      "description": "Grund f\u00fcr Ablehnung"
+    },
+    "signed_document_url": {
+      "type": "string",
+      "description": "URL zum unterschriebenen Dokument"
+    }
+  },
+  "required": [
+    "user_email",
+    "user_name",
+    "has_business"
+  ]
+}

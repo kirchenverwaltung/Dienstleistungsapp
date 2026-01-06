@@ -1,0 +1,31 @@
+{
+  "name": "Feedback",
+  "type": "object",
+  "properties": {
+    "user_name": {
+      "type": "string",
+      "description": "Name des Nutzers"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "E-Mail des Nutzers"
+    },
+    "message": {
+      "type": "string",
+      "description": "Feedback-Nachricht"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "neu",
+        "gelesen",
+        "bearbeitet"
+      ],
+      "default": "neu",
+      "description": "Status des Feedbacks"
+    }
+  },
+  "required": [
+    "message"
+  ]
+}

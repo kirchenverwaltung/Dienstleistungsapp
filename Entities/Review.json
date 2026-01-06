@@ -1,0 +1,46 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "worker_email": {
+      "type": "string",
+      "description": "E-Mail des bewerteten Jobsuchenden"
+    },
+    "worker_name": {
+      "type": "string",
+      "description": "Name des Jobsuchenden"
+    },
+    "employer_email": {
+      "type": "string",
+      "description": "E-Mail des Arbeitgebers"
+    },
+    "employer_name": {
+      "type": "string",
+      "description": "Name des Arbeitgebers"
+    },
+    "job_id": {
+      "type": "string",
+      "description": "ID des Jobs"
+    },
+    "job_title": {
+      "type": "string",
+      "description": "Titel des Jobs"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Bewertung (1-5 Sterne)"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Bewertungskommentar"
+    }
+  },
+  "required": [
+    "worker_email",
+    "worker_name",
+    "employer_email",
+    "rating"
+  ]
+}
