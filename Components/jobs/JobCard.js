@@ -1,14 +1,14 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "../ui/card";
+import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../../utils";
 import { motion } from "framer-motion";
-import { User } from "@/entities/User";
+import { User } from "../../Entities/User";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../theme/ThemeProvider";
 
 export default function JobCard({ job, onSaveToggle, isSaved, showManage = false, isHot = false }) {
   const [isTogglingSave, setIsTogglingSave] = React.useState(false);

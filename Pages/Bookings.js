@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Booking } from "@/entities/Booking";
-import { User } from "@/entities/User";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Booking } from "../Entities/Booking";
+import { User } from "../Entities/User";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Badge } from "../Components/ui/badge";
 import { Calendar, Clock, MapPin, Phone, Mail } from "lucide-react";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";

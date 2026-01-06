@@ -1,15 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "../ui/card";
+import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
 import { MapPin, Clock, Calendar, TrendingUp, Heart } from "lucide-react";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
-import { useTheme } from "@/components/theme/ThemeProvider";
-import { User } from "@/entities/User";
+import { createPageUrl } from "../../utils";
+import { useTheme } from "../theme/ThemeProvider";
+import { User } from "../../Entities/User";
 
 export default function ModernJobCard({ job, isSaved, onSaveToggle, isHot }) {
   const { theme, accentColor } = useTheme();

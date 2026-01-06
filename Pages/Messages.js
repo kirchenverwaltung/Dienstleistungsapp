@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Message } from "@/entities/Message";
-import { User } from "@/entities/User";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Message } from "../Entities/Message";
+import { User } from "../Entities/User";
+import { Card, CardContent } from "../Components/ui/card";
+import { Input } from "../Components/ui/input";
+import { Button } from "../Components/ui/button";
 import { Send, ArrowLeft } from "lucide-react";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../Components/theme/ThemeProvider";
 
 export default function MessagesPage() {
   const { theme } = useTheme();

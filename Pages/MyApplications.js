@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Application } from "@/entities/Application";
-import { User } from "@/entities/User";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Application } from "../Entities/Application";
+import { User } from "../Entities/User";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Badge } from "../Components/ui/badge";
 import { Calendar, FileText } from "lucide-react";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 
 const statusColors = {
   ausstehend: "bg-gradient-to-r from-yellow-100 to-amber-100 text-yellow-800 border-0",

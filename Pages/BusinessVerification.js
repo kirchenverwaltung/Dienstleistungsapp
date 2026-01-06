@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { BusinessRegistration } from "@/entities/BusinessRegistration";
-import { User } from "@/entities/User";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Badge } from "@/components/ui/badge";
+import { BusinessRegistration } from "../Entities/BusinessRegistration";
+import { User } from "../Entities/User";
+import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
+import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
+import { Textarea } from "../Components/ui/textarea";
+import { Label } from "../Components/ui/label";
+import { Badge } from "../Components/ui/badge";
 import { CheckCircle, Clock, Upload, FileText, AlertCircle, Download } from "lucide-react";
 import { motion } from "framer-motion";
-import { UploadFile } from "@/integrations/Core";
+import { UploadFile } from "../integrations/Core";
 import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 
 export default function BusinessVerificationPage() {
   const navigate = useNavigate();

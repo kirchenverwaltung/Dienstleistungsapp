@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../theme/ThemeProvider";
 
 const categories = [
   { name: "Alle", emoji: "🌟", color: "#91D18B" },

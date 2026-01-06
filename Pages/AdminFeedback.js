@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { Feedback } from "@/entities/Feedback";
-import { User } from "@/entities/User";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Feedback } from "../Entities/Feedback";
+import { User } from "../Entities/User";
+import { Card, CardContent } from "../Components/ui/card";
+import { Badge } from "../Components/ui/badge";
+import { Button } from "../Components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../Components/ui/select";
 import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 import { motion } from "framer-motion";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
 import { MessageSquare, Mail, Clock } from "lucide-react";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../Components/theme/ThemeProvider";
 
 export default function AdminFeedbackPage() {
   const navigate = useNavigate();

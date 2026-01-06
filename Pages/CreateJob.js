@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Job } from "@/entities/Job";
-import { User } from "@/entities/User";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Switch } from "@/components/ui/switch";
+import { Job } from "../Entities/Job";
+import { User } from "../Entities/User";
+import { Card, CardContent } from "../Components/ui/card";
+import { Input } from "../Components/ui/input";
+import { Textarea } from "../Components/ui/textarea";
+import { Label } from "../Components/ui/label";
+import { Button } from "../Components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../Components/ui/select";
+import { Switch } from "../Components/ui/switch";
 import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 import { motion } from "framer-motion";
 
 const categories = ["Gastronomie", "Event", "Büro", "Handwerk", "IT", "Verkauf", "Promotion", "Umzugshilfe", "Nachhilfe", "Sonstiges"];

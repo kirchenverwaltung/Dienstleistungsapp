@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "./utils";
 import { Home, User, Briefcase, MessageSquare, Wallet, Shield } from "lucide-react";
 import {
   Sidebar,
@@ -12,12 +12,12 @@ import {
   SidebarHeader,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { User as UserEntity } from "@/entities/User";
+} from "./Components/ui/sidebar";
+import { User as UserEntity } from "./Entities/User";
 import { motion } from "framer-motion";
-import MessageNotification from "@/components/notifications/MessageNotification";
-import { ThemeProvider, useTheme } from "@/components/theme/ThemeProvider";
-import AIAssistant from "@/components/ai/AIAssistant";
+import MessageNotification from "./Components/notifications/MessageNotification";
+import { ThemeProvider, useTheme } from "./Components/theme/ThemeProvider";
+import AIAssistant from "./Components/ai/AIAssistant";
 
 function LayoutContent({ children, currentPageName }) {
   const location = useLocation();

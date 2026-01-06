@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { createPageUrl } from "../utils";
+import { useTheme } from "../Components/theme/ThemeProvider";
 
 const statusColors = {
   eingereicht: "bg-blue-100 text-blue-800 border-blue-200",

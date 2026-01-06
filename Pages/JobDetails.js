@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Job } from "@/entities/Job";
-import { Application } from "@/entities/Application";
-import { User } from "@/entities/User";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Badge } from "@/components/ui/badge";
+import { Job } from "../Entities/Job";
+import { Application } from "../Entities/Application";
+import { User } from "../Entities/User";
+import { Card, CardContent } from "../Components/ui/card";
+import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
+import { Textarea } from "../Components/ui/textarea";
+import { Label } from "../Components/ui/label";
+import { Badge } from "../Components/ui/badge";
 import { ArrowLeft, MapPin, Clock, Calendar, Users, Mail, Phone, Building2, CalendarPlus } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../utils";
 import { motion } from "framer-motion";
 import { format } from "date-fns";
 import { de } from "date-fns/locale";
-import { useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "../Components/theme/ThemeProvider";
 
 export default function JobDetailsPage() {
   const navigate = useNavigate();

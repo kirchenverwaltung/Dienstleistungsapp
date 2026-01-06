@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Job } from "@/entities/Job";
-import { User } from "@/entities/User";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Job } from "../Entities/Job";
+import { User } from "../Entities/User";
+import { Card, CardContent } from "../Components/ui/card";
+import { Badge } from "../Components/ui/badge";
 import { Briefcase } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
-import JobCard from "../components/jobs/JobCard";
+import { createPageUrl } from "../utils";
+import JobCard from "../Components/jobs/JobCard";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Button } from "../Components/ui/button";
 
 export default function MyJobsPage() {
   const navigate = useNavigate();
